@@ -1,0 +1,29 @@
+Options description
+
++-------------+-------------------+-------------------------------------+--------+
+| Option Name | Keyboard Shortcut |            Description              |  Type  |
++-------------+-------------------+-------------------------------------+--------+
+| gravity     |      g            | Boxes gravitate toward each other   | bool   |
++-------------+-------------------+-------------------------------------+--------+
+| ROI         |      r            | Region of Influence - Only consider | int    |
+|             |                   | boxes that are within this distance |        |
+|             |                   | away (boxes outside this are not    |        |
+|             |                   | considered in gravity calculation)  |        |
++-------------+-------------------+-------------------------------------+--------+
+| A0          |      a            | If gravity is on, boxes will        | float  |
+|             |                   | accelerate toward the center of mass|        |
+|             |                   | of the boxes within their ROI with  |        |
+|             |                   | magnitude equal to d_CoM * A0       |        |
++-------------+-------------------+-------------------------------------+--------+
+| max speed   |      m            | Cap box motion at m px/frame        | float  |
++-------------+-------------------+-------------------------------------+--------+
+| bounce off  |      b            | When a box reaches a wall, bounce   | bool   |
+|   walls     |                   | off of it. Otherwise, pull a Pac-Man|        |
+|             |                   | move to the other side of the screen|        |
++-------------+-------------------+-------------------------------------+--------+
+| draw tail   |      l            | Give boxes a tail of length l       | int    |
+|   len       |                   |                                     |        |
++-------------+-------------------+-------------------------------------+--------+
+| draw ROI    |      d            | draw a circle with radius equal to  | bool   |
+|             |                   | ROI around each box                 |        |
++-------------+-------------------+-------------------------------------+--------+

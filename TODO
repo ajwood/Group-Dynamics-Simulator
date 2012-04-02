@@ -1,0 +1,13 @@
+- Make my own botton image (current versions borrowed from http://www.pygame.org/project-Life+as+a+Bit-2064-.html)
+
+- Critical mass needs better implementation. Current problem is that many boxes come out of it with the same velocity 
+
+- realistic gravity, or at least different gravity schemes
+
+- maybe give different sized boxes with different mass
+
+- Optimization
+	- Long tails probably shouldn't have to be redrawn every time. Only erase the last and draw the first box in the tail list
+	- The numpy arrays are probably overkill -- can things speed up if they're float tupples?
+
+- Add supprt to draw acceleration and/or velocity vectors
